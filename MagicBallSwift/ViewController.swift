@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var textView: UIView!
     @IBOutlet weak var clickButton: UIButton!
     
+    //MARK: - Array of random text
     let textArray = [
       "YES",
       "NO",
@@ -41,21 +41,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         createButtonUI()
         createViewUI()
-       
-        
+
     }
     
     //MARK: - button UI
     func createButtonUI() {
         clickButton.layer.cornerRadius = 45
-        clickButton.layer.shadowRadius = 2.0
+        clickButton.layer.shadowRadius =  2.0
         clickButton.layer.shadowColor = UIColor.black.cgColor
         clickButton.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         clickButton.layer.shadowOpacity = 0.4
         clickButton.layer.masksToBounds = false
+        clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
+        
     }
     
     //MARK: - view UI
@@ -71,11 +71,24 @@ class ViewController: UIViewController {
     
     
     
-    
-    
-    
+   
+    //MARK: - Button Action
     @IBAction func clickButtonAction(_ sender: UIButton) {
+        textLabel.text = textArray.randomElement()
+        clickButton.isEnabled = false
+        clickButton.setTitle("...", for: .disabled)
+        clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController.enableButton), userInfo: nil, repeats: false)
     }
+    
+    @objc func enableButton() {
+        clickButton.isEnabled = true
+        clickButton.setTitle("Click", for: .normal)
+        clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
+    }
+  
+   
+    
     
 
 }
