@@ -21,7 +21,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask me about something!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="118-qG-wxr">
                                         <rect key="frame" x="16" y="98" width="329" height="165"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
-                                        <color key="textColor" red="0.66666666669999997" green="0.58823529409999997" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.84313725490196079" green="0.51372549019607838" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
