@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         textLabel.text = textArray.randomElement()
         clickButton.isEnabled = false
         clickButton.setTitle("...", for: .disabled)
-        clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
+        clickButton.titleLabel?.font = R.Fonts.AppleSDGothicNeoLight(with: 44)
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController.enableButton), userInfo: nil, repeats: false)
         
     }
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     @objc func enableButton() {
         clickButton.isEnabled = true
         clickButton.setTitle("Click", for: .normal)
-        clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
+        clickButton.titleLabel?.font = R.Fonts.AppleSDGothicNeoLight(with: 44)
     }
   
    

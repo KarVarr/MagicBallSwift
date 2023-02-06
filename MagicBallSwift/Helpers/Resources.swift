@@ -6,3 +6,12 @@
 //
 
 import UIKit
+
+enum R {
+    enum Fonts {
+        static func AppleSDGothicNeoLight (with size: CGFloat) -> UIFont {
+            UIFont(name: "AppleSDGothicNeo-Light", size: size) ?? UIFont()
+        }
+    }
+    
+}
