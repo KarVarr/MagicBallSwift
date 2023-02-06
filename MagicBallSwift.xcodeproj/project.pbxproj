@@ -13,6 +13,7 @@
 		1734CE76296DC14700229942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1734CE74296DC14700229942 /* Main.storyboard */; };
 		1734CE78296DC14900229942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1734CE77296DC14900229942 /* Assets.xcassets */; };
 		1734CE7B296DC14900229942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1734CE79296DC14900229942 /* LaunchScreen.storyboard */; };
+		17A6A9F529917E6E003BE599 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6A9F429917E6E003BE599 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1734CE77296DC14900229942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1734CE7A296DC14900229942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1734CE7C296DC14900229942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A6A9F429917E6E003BE599 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		1734CE6D296DC14700229942 /* MagicBallSwift */ = {
 			isa = PBXGroup;
 			children = (
+				17A6A9F329917E46003BE599 /* Helpers */,
 				1734CE6E296DC14700229942 /* AppDelegate.swift */,
 				1734CE70296DC14700229942 /* SceneDelegate.swift */,
 				1734CE72296DC14700229942 /* ViewController.swift */,
 				1734CE74296DC14700229942 /* Main.storyboard */,
+				17A6A9F229917CF8003BE599 /* SupportingFiles */,
+			);
+			path = MagicBallSwift;
+			sourceTree = "<group>";
+		};
+		17A6A9F229917CF8003BE599 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				1734CE77296DC14900229942 /* Assets.xcassets */,
 				1734CE79296DC14900229942 /* LaunchScreen.storyboard */,
 				1734CE7C296DC14900229942 /* Info.plist */,
 			);
-			path = MagicBallSwift;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		17A6A9F329917E46003BE599 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17A6A9F429917E6E003BE599 /* Resources.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1734CE73296DC14700229942 /* ViewController.swift in Sources */,
+				17A6A9F529917E6E003BE599 /* Resources.swift in Sources */,
 				1734CE6F296DC14700229942 /* AppDelegate.swift in Sources */,
 				1734CE71296DC14700229942 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LA9F8MT28T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MagicBallSwift/Info.plist;
+				INFOPLIST_FILE = MagicBallSwift/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LA9F8MT28T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MagicBallSwift/Info.plist;
+				INFOPLIST_FILE = MagicBallSwift/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

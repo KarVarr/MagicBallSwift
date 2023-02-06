@@ -79,6 +79,7 @@ class ViewController: UIViewController {
         clickButton.setTitle("...", for: .disabled)
         clickButton.titleLabel?.font = UIFont(name: "GillSans-Italic", size: 44)
         Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController.enableButton), userInfo: nil, repeats: false)
+        
     }
     
     @objc func enableButton() {
