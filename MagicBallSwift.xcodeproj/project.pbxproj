@@ -58,9 +58,8 @@
 		1734CE6D296DC14700229942 /* MagicBallSwift */ = {
 			isa = PBXGroup;
 			children = (
+				17A6A9FA29918A56003BE599 /* Application */,
 				17A6A9F329917E46003BE599 /* Helpers */,
-				1734CE6E296DC14700229942 /* AppDelegate.swift */,
-				1734CE70296DC14700229942 /* SceneDelegate.swift */,
 				1734CE72296DC14700229942 /* ViewController.swift */,
 				1734CE74296DC14700229942 /* Main.storyboard */,
 				17A6A9F229917CF8003BE599 /* SupportingFiles */,
@@ -84,6 +83,15 @@
 				17A6A9F429917E6E003BE599 /* Resources.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		17A6A9FA29918A56003BE599 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1734CE6E296DC14700229942 /* AppDelegate.swift */,
+				1734CE70296DC14700229942 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
