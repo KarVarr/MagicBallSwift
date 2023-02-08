@@ -8,6 +8,7 @@
 
 <div id="header" align="center">
 
-<img src="MagicBallSwift/SupportingFiles/magicBall2png.png" alt="img" width="400"/>
-
+<img src="MagicBallSwift/SupportingFiles/magicBall2png.png" alt="img" width="900"/>
+<img src="MagicBallSwift/SupportingFiles/magicBallGif.gif" alt="img" width="500"/>
+  
 </div>
